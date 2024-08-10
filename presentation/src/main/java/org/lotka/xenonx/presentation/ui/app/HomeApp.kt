@@ -1,11 +1,6 @@
-package org.lotka.xenonx.presentation.ui.app
-
-
-
-
+package org.lotka.xenonx.presentation.ui.ap
 import android.annotation.SuppressLint
-import androidx.compose.animation.EnterTransition
-import androidx.compose.animation.ExitTransition
+
 import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.Scaffold
 import androidx.compose.material.rememberScaffoldState
@@ -18,6 +13,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.google.accompanist.pager.ExperimentalPagerApi
+import org.lotka.xenonx.presentation.ui.app.HomeActivity
 
 import org.lotka.xenonx.presentation.ui.navigation.ScreensNavigation
 
@@ -46,21 +42,10 @@ fun HomeApp(
 
         content = { _ ->
             NavHost(navController = navController,
-                startDestination = ScreensNavigation.single_chat_screen .route,
-                enterTransition = {
-                    // you can change whatever you want transition
-                    EnterTransition.None
-                },
-                exitTransition = {
-                    // you can change whatever you want transition
-                    ExitTransition.None
-                }) {
+                startDestination = ScreensNavigation.BeerScreen .route,) {
                 composable(
-                    route = ScreensNavigation.single_chat_screen .route,
+                    route = ScreensNavigation.BeerScreen .route,
                 ) {
-
-
-
 
 
                 }

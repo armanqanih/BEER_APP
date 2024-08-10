@@ -9,6 +9,7 @@ buildscript {
         classpath ("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22")
         classpath ("com.google.dagger:hilt-android-gradle-plugin:2.47")
         classpath ("org.jetbrains.kotlin:kotlin-serialization:1.9.22")
+
         classpath ("com.google.firebase:firebase-crashlytics-gradle:2.9.9")
         classpath ("com.google.firebase:perf-plugin:1.4.2")
         classpath ("com.google.gms:google-services:4.4.1")

@@ -7,6 +7,7 @@ plugins {
     id ("kotlin-parcelize")
     id ("com.google.firebase.crashlytics")
     id ("com.google.gms.google-services")
+
 }
 
 android {
@@ -116,6 +117,8 @@ dependencies {
     // ConstraintLayout
     implementation ("androidx.constraintlayout:constraintlayout-compose:1.0.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+
+
 
     // Coil image library
     implementation ("io.coil-kt:coil-compose:2.2.2")
